@@ -9,42 +9,64 @@ public class asisten {
 
         System.out.println("masukkan nilai akhir Matkul");
         System.out.println("masukan nilai Struktur Data= ");
-        Float nSD = ns.nextFloat();
-        Float rnSD = nSD * 4 /100;
+        double nSD = ns.nextDouble();
+        double rnSD = nSD * 4 /100;
 
         System.out.println("masukan nilai Pemrograman Berorientasi Objek= ");
-        Float nPBO = ns.nextFloat();
-        Float rnPBO = nPBO * 4 /100;
+        double nPBO = ns.nextDouble();
+        double rnPBO = nPBO * 4 /100;
 
         System.out.println("masukan nilai Basis Data= ");
-        Float nBD = ns.nextFloat();
-        Float rnBD = nBD* 4 /100;
+        double nBD = ns.nextDouble();
+        double rnBD = nBD* 4 /100;
 
         System.out.println("masukan nilai Algoritma dan Pemrograman");
-        Float nAP = ns.nextFloat();
-        Float rnAP = nAP * 4 /100;
+        double nAP = ns.nextDouble();
+        double rnAP = nAP * 4 /100;
 
         System.out.println("masukan nilai Rekayasa Perangkat Lunak");
-        Float nRPL = ns.nextFloat();
-        Float rnRPL = nRPL * 4 /100;
+        double nRPL = ns.nextDouble();
+        double rnRPL = nRPL * 4 /100;
 
-        rataRata = (rnSD + rnPBO+ rnBD + rnAP + nRPL) * 4 / 100;
+        rataRata = (rnSD + rnPBO+ rnBD + rnAP + rnRPL) / 5;
         System.out.print("Rata-rata anda= " +rataRata);
 
-    if (rataRata >= 3.75 && rataRata <=4.00) {
-        System.out.println("A (Sangat baik)");
-    } if (rataRata >3.50 && rataRata <3.74){
-        System.out.println("B (Baik Sekali)");
-    } if (rataRata >3.00 && rataRata <3.49){
-        System.out.println("B (Baik)");
-    } if (rataRata >2.50 && rataRata <2.99){
-        System.out.println("BC (Cukup)");
-    } if (rataRata <2.50){
-        System.out.println("C (Kurang)");
-    } else {
-        System.out.println("Invalid");
-    }
+        String predikat;
+         if (rataRata >= 3.75 && rataRata <=4.00) {
+            predikat = "A(Sangat Baik)";
+            System.out.println(predikat);
+        } else if (rataRata >3.50 && rataRata <3.74){
+            predikat = "AB(Baik Sekali)";
+            System.out.println(predikat);
+        } else if (rataRata >3.00 && rataRata <3.49){
+            predikat = "B(Baik)";
+            System.out.println(predikat);
+        } else if (rataRata >2.50 && rataRata <2.99){
+            predikat = "BC(Cukup)";
+            System.out.println(predikat);
+        } else if (rataRata <2.50){
+            predikat = "C(Kurang)";
+            System.out.println(predikat);
+        } else {
+            predikat = "eror";
+            System.out.println(predikat);
+        }
+        
+        if (predikat.equals("A(Sangat Baik)")|| predikat.equals("AB(Baik Sekali)")){
+            System.out.println("==MATA KULIAH YANG DAPAT DIAJUKAN==");
+            System.out.println("1. Struktur Data");
+            System.out.println("2. Pemrograman Berorientasi Data");
+            System.out.println("3. Basis Data");
+            System.out.println("4. Algoritma dan Pemrograman");
+            System.out.println("5. Rekayasa Perangkat Lunak");
+            int menu = ns.nextInt();
+            ns.nextLine();
 
+            
+
+        } else {
+            System.out.println("Anda belum memenuhi syarat menjadi asisten dosen");   
+        }
 
     }
 
