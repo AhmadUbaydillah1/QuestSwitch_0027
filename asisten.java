@@ -4,34 +4,33 @@ public class asisten {
     public static void main(String[] args) {
         Scanner ns = new Scanner(System.in);
 
-        double nilaiAkhir, rataRata;
-        Float nilai;
+        double rataRata, nSD, rnSD, nPBO, rnPBO, nBD, rnBD, nAP, rnAP, nRPL, rnRPL;
+        String predikat;
 
-        System.out.println("masukkan nilai akhir Matkul");
+        System.out.println("Masukkan nilai akhir Mata Kuliah anda!");
         System.out.println("masukan nilai Struktur Data= ");
-        double nSD = ns.nextDouble();
-        double rnSD = nSD * 4 /100;
+            nSD = ns.nextDouble();
+            rnSD = nSD * 4 /100;
 
         System.out.println("masukan nilai Pemrograman Berorientasi Objek= ");
-        double nPBO = ns.nextDouble();
-        double rnPBO = nPBO * 4 /100;
+            nPBO = ns.nextDouble();
+            rnPBO = nPBO * 4 /100;
 
         System.out.println("masukan nilai Basis Data= ");
-        double nBD = ns.nextDouble();
-        double rnBD = nBD* 4 /100;
+            nBD = ns.nextDouble();
+            rnBD = nBD* 4 /100;
 
         System.out.println("masukan nilai Algoritma dan Pemrograman");
-        double nAP = ns.nextDouble();
-        double rnAP = nAP * 4 /100;
+            nAP = ns.nextDouble();
+            rnAP = nAP * 4 /100;
 
         System.out.println("masukan nilai Rekayasa Perangkat Lunak");
-        double nRPL = ns.nextDouble();
-        double rnRPL = nRPL * 4 /100;
+            nRPL = ns.nextDouble();
+            rnRPL = nRPL * 4 /100;
 
         rataRata = (rnSD + rnPBO+ rnBD + rnAP + rnRPL) / 5;
         System.out.print("Rata-rata anda= " +rataRata);
 
-        String predikat;
          if (rataRata >= 3.75 && rataRata <=4.00) {
             predikat = "A(Sangat Baik)";
             System.out.println(predikat);
@@ -64,7 +63,7 @@ public class asisten {
 
             switch (menu) {
                 case 1:
-                    System.out.println(rataRata);
+                    System.out.println("rata-rata anda: " +rataRata);
                     if (rataRata >3.0) {
                         System.out.println("Anda Eligible dan dianyatakan menjadi Asisten Dosen");
                     } else{
@@ -72,7 +71,7 @@ public class asisten {
                     }
                     break;
                 case 2:  
-                    System.out.println(rataRata);
+                    System.out.println("rata-rata anda" +rataRata);
                     if (rataRata >3.0) {
                         System.out.println("Anda Eligible dan dianyatakan menjadi Asisten Dosen");
                     } else{
@@ -80,7 +79,7 @@ public class asisten {
                     }
                     break;
                 case 3:
-                    System.out.println(rataRata);
+                    System.out.println("rata-rata anda" +rataRata);
                     if (rataRata >3.0) {
                         System.out.println("Anda Eligible dan dianyatakan menjadi Asisten Dosen");
                     } else{
@@ -88,7 +87,7 @@ public class asisten {
                     }
                     break;
                 case 4:
-                    System.out.println(rataRata);
+                    System.out.println("rata-rata anda" +rataRata);
                     if (rataRata >3.0) {
                         System.out.println("Anda Eligible dan dianyatakan menjadi Asisten Dosen");
                     } else{
@@ -96,7 +95,7 @@ public class asisten {
                     }
                     break;
                 case 5:
-                    System.out.println(rataRata);
+                    System.out.println("rata-rata anda" +rataRata);
                     if (rataRata >3.0) {
                         System.out.println("Anda Eligible dan dianyatakan menjadi Asisten Dosen");
                     } else{
