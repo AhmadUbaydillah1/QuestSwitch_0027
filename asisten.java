@@ -79,6 +79,14 @@ public class asisten {
                         System.out.println("Anda tidak Eligible dan Tidak dinyatakan menjadi Asisten dosen");
                     }
                     break;
+                case 3:
+                    System.out.println(rataRata);
+                    if (rataRata >3.0) {
+                        System.out.println("Anda Eligible dan dianyatakan menjadi Asisten Dosen");
+                    } else{
+                        System.out.println("Anda tidak Eligible dan Tidak dinyatakan menjadi Asisten dosen");
+                    }
+                    break;
             
                 default:
                     break;
