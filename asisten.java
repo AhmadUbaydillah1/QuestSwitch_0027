@@ -8,23 +8,23 @@ public class asisten {
         String predikat;
 
         System.out.println("Masukkan nilai akhir Mata Kuliah anda!");
-        System.out.println("masukan nilai Struktur Data= ");
+        System.out.print("masukan nilai Struktur Data: ");
             nSD = ns.nextDouble();
             rnSD = nSD * 4 /100;
 
-        System.out.println("masukan nilai Pemrograman Berorientasi Objek= ");
+        System.out.print("masukan nilai Pemrograman Berorientasi Objek:  ");
             nPBO = ns.nextDouble();
             rnPBO = nPBO * 4 /100;
 
-        System.out.println("masukan nilai Basis Data= ");
+        System.out.print("masukan nilai Basis Data: ");
             nBD = ns.nextDouble();
-            rnBD = nBD* 4 /100;
+            rnBD = nBD * 4 /100;
 
-        System.out.println("masukan nilai Algoritma dan Pemrograman");
+        System.out.print("masukan nilai Algoritma dan Pemrograman: ");
             nAP = ns.nextDouble();
             rnAP = nAP * 4 /100;
 
-        System.out.println("masukan nilai Rekayasa Perangkat Lunak");
+        System.out.print("masukan nilai Rekayasa Perangkat Lunak: ");
             nRPL = ns.nextDouble();
             rnRPL = nRPL * 4 /100;
 
@@ -64,7 +64,7 @@ public class asisten {
             switch (menu) {
                 case 1:
                     System.out.println("rata-rata anda: " +rataRata);
-                    if (rataRata >3.0) {
+                    if (rataRata >=3.0) {
                         System.out.println("Anda Eligible dan dianyatakan menjadi Asisten Dosen");
                     } else{
                         System.out.println("Anda tidak Eligible dan Tidak dinyatakan menjadi Asisten dosen");
@@ -72,7 +72,7 @@ public class asisten {
                     break;
                 case 2:  
                     System.out.println("rata-rata anda" +rataRata);
-                    if (rataRata >3.0) {
+                    if (rataRata >=3.0) {
                         System.out.println("Anda Eligible dan dianyatakan menjadi Asisten Dosen");
                     } else{
                         System.out.println("Anda tidak Eligible dan Tidak dinyatakan menjadi Asisten dosen");
@@ -80,7 +80,7 @@ public class asisten {
                     break;
                 case 3:
                     System.out.println("rata-rata anda" +rataRata);
-                    if (rataRata >3.0) {
+                    if (rataRata >=3.0) {
                         System.out.println("Anda Eligible dan dianyatakan menjadi Asisten Dosen");
                     } else{
                         System.out.println("Anda tidak Eligible dan Tidak dinyatakan menjadi Asisten dosen");
@@ -88,7 +88,7 @@ public class asisten {
                     break;
                 case 4:
                     System.out.println("rata-rata anda" +rataRata);
-                    if (rataRata >3.0) {
+                    if (rataRata >=3.0) {
                         System.out.println("Anda Eligible dan dianyatakan menjadi Asisten Dosen");
                     } else{
                         System.out.println("Anda tidak Eligible dan Tidak dinyatakan menjadi Asisten dosen");
@@ -96,7 +96,7 @@ public class asisten {
                     break;
                 case 5:
                     System.out.println("rata-rata anda" +rataRata);
-                    if (rataRata >3.0) {
+                    if (rataRata >=3.0) {
                         System.out.println("Anda Eligible dan dianyatakan menjadi Asisten Dosen");
                     } else{
                         System.out.println("Anda tidak Eligible dan Tidak dinyatakan menjadi Asisten dosen");
